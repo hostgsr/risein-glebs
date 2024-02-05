@@ -87,7 +87,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({secondDashboard, thirdDash
     const isNft = nftContext?.hasLoginNFT;
 
     if (!connected) {
-        return <div className='text-center h-full w-full '>No wallet no dashboard</div>;
+        return <div className='text-center h-full w-full flex items-center justify-center '>No wallet no dashboard</div>;
     }
 
 
