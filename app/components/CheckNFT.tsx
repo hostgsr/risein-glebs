@@ -87,7 +87,7 @@ const CheckNFT = () => {
                     {nftData && connected && (
                         <div>
                           <div className='flex justify-between flex-row  border-t border-white '> <p>User Name:</p> <p> {nftData.name}</p></div>
-                            <div className='flex justify between flex-row  border-t border-white '  ><p>E-Mail: </p> <p>{nftData.email}</p></div>
+                            <div className='flex justify-between flex-row  border-t border-white '  ><p>E-Mail: </p> <p>{nftData.email}</p></div>
                            <div className='flex justify-between flex-row  border-y border-white '  > <p>Semester: </p> <p>{nftData.semester}</p></div>
                         </div>
                     )}
