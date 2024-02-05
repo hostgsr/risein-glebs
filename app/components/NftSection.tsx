@@ -69,7 +69,7 @@ const NftSection: React.FC<NftSectionProps> = ({ fullWidth }) => {
 
             setUmi(umiInstance);
         }
-    }, [wallet, connected, rpcEndpoint, irysUploaderOptions]);
+    }, [wallet, connected, rpcEndpoint]);
 
     // Handle the creation of a new NFT
     const handleCreateNFT = async () => {
