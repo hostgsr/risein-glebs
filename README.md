@@ -66,6 +66,6 @@ npm run dev
 
 ## Frontend
 
-The DApp frontend is built using modern web technologies including NEXT JS, Metaplex, Web3.
+The DApp frontend is built using modern web technologies including NEXT JS, Metaplex, Web3.js.
 
 
