@@ -75,7 +75,7 @@ const CheckNFT = () => {
         if (wallet && connected) {
             getMetadata();
         }
-    }, [umi, publicKey, wallet, connected]);
+    }, [umi, publicKey, wallet, connected, nftContext]);
 
     // Render the component
     return (

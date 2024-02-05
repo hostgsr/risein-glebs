@@ -31,7 +31,8 @@ const solNetwork = WalletAdapterNetwork.Devnet;
 // Define the main component
 const IndexPage = () => {
     // Initialize wallet adapters and other variables
-    const wallets = useMemo(() => [new PhantomWalletAdapter()], [solNetwork]);
+    const wallets = useMemo(() => [new PhantomWalletAdapter()], []);
+
     const umi = createUmi(rpcEndpoint);
     const endpoint = umi.rpc.getEndpoint();
     const [animateHero, setAnimateHero] = useState(false);
@@ -198,11 +199,11 @@ const IndexPage = () => {
                                 <p className='border-white rounded-full border py-1 w-fit px-5 mb-5'>Instructions</p>
                                 <p>- Use Chrome Based Browser</p>
                                 <p>- Install Phantom Wallet</p>
-                                <p>- In case you see red dot, be sure your wallet is loaded with some SOL</p>
+                                <p>- In case you see red dot, be sure your wallet is loaded with some SOL&apos;</p>
                                 <p>- Refresh page after minting</p>
 
                                 <p className='mt-12'>
-                                This is just a brief workaround demonstrating how login functionality can be implemented based on NFTs created by the user. It's driven by fun and exploration of front-end Web3 technologies.
+                                This is just a brief workaround demonstrating how login functionality can be implemented based on NFTs created by the user. Its driven by fun and exploration of front-end Web3 technologies.
                                 </p>
                             </motion.div>
 

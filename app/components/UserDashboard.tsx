@@ -41,7 +41,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({secondDashboard, thirdDash
                 .use(mplToolbox());
             setUmi(umiInstance);
         }
-    }, [wallet, connected, rpcEndpoint]);
+    }, [wallet, connected, rpcEndpoint, nftContext]);
 
     useEffect(() => {
         const getMetadata = async () => {
@@ -82,7 +82,7 @@ const UserDashboard: React.FC<UserDashboardProps> = ({secondDashboard, thirdDash
         if (wallet && connected) {
             getMetadata();
         }
-    }, [umi, publicKey, wallet, connected]);
+    }, [umi, publicKey, wallet, connected, nftContext]);
 
     const isNft = nftContext?.hasLoginNFT;
 

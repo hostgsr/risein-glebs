@@ -55,7 +55,7 @@ const NftSection: React.FC<NftSectionProps> = ({ fullWidth }) => {
         if (!connected && wallet && !notInstalledWallet) {
             connect();
         }
-    }, [connect, connected, wallet]);
+    }, [connect, connected, wallet, notInstalledWallet ]);
 
     // Create Umi instance after wallet connection
     useEffect(() => {
@@ -69,7 +69,7 @@ const NftSection: React.FC<NftSectionProps> = ({ fullWidth }) => {
 
             setUmi(umiInstance);
         }
-    }, [wallet, connected, rpcEndpoint]);
+    }, [wallet, connected, rpcEndpoint, irysUploaderOptions]);
 
     // Handle the creation of a new NFT
     const handleCreateNFT = async () => {
@@ -224,7 +224,7 @@ const NftSection: React.FC<NftSectionProps> = ({ fullWidth }) => {
                     )
                 ) : null}
             </div>
-            {!connected ? <div className='mt-12'>Connect your wallet to participate in learn to earn activities. It's important to use a browser that supports the Phantom wallet.</div> : null}
+            {!connected ? <div className='mt-12'>Connect your wallet to participate in learn to earn activities. Its important to use a browser that supports the Phantom wallet.</div> : null}
             <CheckNFT />
             <WalletSection withBalace={false} onlyDisconnected={false} />
         </div>
