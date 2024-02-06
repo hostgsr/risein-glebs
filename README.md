@@ -3,6 +3,8 @@
 Here is link:
 https://risein-glebs.vercel.app/
 
+All works on devnet
+
 1) just click on "start here" enjoy animation:)
 2) connect phantom wallet
 3) create account/ mint nft
